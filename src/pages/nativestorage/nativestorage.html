@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title><a href="http://ionicframework.com/docs/native/native-storage/" target="_blank">Native Storage</a></ion-title>
+    </ion-navbar>
+</ion-header>
+<a href="https://github.com/TheCocoaProject/cordova-plugin-nativestorage" target="_blank">cordova-plugin-nativestorage</a>
+<ion-content padding>
+    <h3>Notice</h3>
+    <p>This function does not work under "ionic serve". You have to check with "ionic cordova run browser".
+    </p>
+    <p>This function does not work under "ion view"!! <a href="https://forum.ionicframework.com/t/nativestorage-getting-error-plugin-not-installed/87027/3" target="_blank">Why are you using Native Storage and not Ionic Storage?</a>
+    </p>
+    <h3>Counter</h3>
+    <ion-grid>
+        <ion-row>
+            <ion-col>Number:{{counter}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col><button ion-button small outline block (click)="countUp('counter')">Count Up</button></ion-col>
+            <ion-col><button ion-button small outline block (click)="countReset('counter')">Reset</button></ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

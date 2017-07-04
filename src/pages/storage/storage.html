@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title><a href="https://ionicframework.com/docs/storage/" target="_blank">Storage</a></ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <h3>Counter</h3>
+    <ion-grid>
+        <ion-row>
+            <ion-col>Number:{{counter}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col><button ion-button small outline block (click)="countUp('counter')">Count Up</button></ion-col>
+            <ion-col><button ion-button small outline block (click)="countReset('counter')">Reset</button></ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
